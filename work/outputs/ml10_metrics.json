@@ -1,1 +1,18 @@
-
+{
+  "model": "Logistic Regression",
+  "validation_split": "client-grouped",
+  "random_state": 42,
+  "dataset_rows": 141467,
+  "test_rows": 10247,
+  "test_clients": 9,
+  "precision_at_20": 1.0,
+  "precision_at_50": 0.98,
+  "decline_proxy_rate": 0.6405,
+  "reason_code_counts": {
+    "HIGH_DECLINE_RISK": 4821,
+    "LOW_CURRENT_ENGAGEMENT": 3273,
+    "LOW_CTR_HIGH_VISIBILITY": 1517,
+    "WEAK_SEARCH_POSITION": 636
+  },
+  "purpose": "research decision-support"
+}
