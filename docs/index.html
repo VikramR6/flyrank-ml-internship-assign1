@@ -83,14 +83,14 @@ footer{padding:36px 0 70px;color:var(--muted)}
 <section id="abstract">
 <div class="wrap">
 <h2>Abstract</h2>
-<p>This study asks whether observed search-performance signals can rank content associated with a future zero-click decline proxy well enough to prioritize pages for human review. Using the FlyRank ML Internship warehouse, the analysis constructs four features from 1–15 March 2026 and defines the outcome from observed clicks during 16–31 March 2026. A standardized Logistic Regression model is evaluated with a client-grouped 80/20 holdout and compared with the Week-4 baseline using Precision@20 and Precision@50. On the held-out test set, the model measured 1.00 Precision@20 and 0.98 Precision@50, compared with 0.05 and 0.12 for the baseline. These results support the model as a prioritization signal in this validation setting, but the proxy outcome and single-month evaluation mean the result should not be treated as proof of real-world content decline or as a causal claim.</p>
+<p>This study asks whether observed search-performance signals can help FlyRank-style content teams prioritize pages that may need attention when review capacity is limited. Using the FlyRank ML Internship warehouse, the analysis constructs four features from 1–15 March 2026 and defines the outcome from observed clicks during 16–31 March 2026. A standardized Logistic Regression model is evaluated with a client-grouped 80/20 holdout and compared with the Week-4 baseline using Precision@20 and Precision@50. On the held-out test set, the model measured 1.00 Precision@20 and 0.98 Precision@50, compared with 0.05 and 0.12 for the baseline. These results support the model as a prioritization signal for the content-review problem in this validation setting, but the proxy outcome and single-month evaluation mean the result should not be treated as proof of real-world content decline or as a causal claim.</p>
 </div>
 </section>
 
 <section id="introduction">
 <div class="wrap">
 <h2>1. Introduction / Problem Statement</h2>
-<p>Content and SEO teams often have more pages to review than they can inspect manually. A useful model in this setting does not need to make autonomous publishing decisions; it needs to help reviewers decide which pages deserve attention first.</p>
+<p>FlyRank's content and SEO work involves identifying which pages deserve attention in a large content portfolio. The practical problem is not simply predicting a label; it is helping a human reviewer prioritize limited time across pages that show different search-performance signals. A useful model therefore does not need to make autonomous publishing decisions. It needs to help reviewers decide which pages should be investigated first.</p>
 <p>The research question is:</p>
 <div class="note"><strong>Can a client-grouped Logistic Regression model rank content that shows a future zero-click decline proxy well enough to prioritize pages for human review?</strong></div>
 <p>The decision supported by the study is review prioritization: which pages should be investigated first for possible refresh, CTR review, relevance review, consolidation, or no change.</p>
